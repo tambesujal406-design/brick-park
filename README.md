@@ -9,8 +9,7 @@ A sunny toy-brick playground that builds itself as you scroll. Brick Park is a s
 
 **Live demo:** [https://tambesujal406-design.github.io/brick-park/](https://tambesujal406-design.github.io/brick-park/)
 
-<!-- Add a screenshot: save it as docs/preview.png, then replace this comment with:
-![Brick Park preview](docs/preview.png) -->
+![Brick Park preview](preview.png)
 
 ## Features
 
