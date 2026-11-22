@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Brick Park - a scroll-driven toy-brick playground</title>
+<meta name="description" content="Brick Park is a scroll-driven toy-brick playground with parallax, 3D effects, a minifig maker, a brick builder, and a mini game. Built with vanilla HTML, CSS, and JavaScript.">
+<meta name="theme-color" content="#8FD3FF">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brick Park">
+<meta property="og:description" content="A sunny toy-brick playground that builds itself as you scroll.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<noscript>Brick Park needs JavaScript for its scroll effects and games.</noscript>
+<div id="bar"></div>
+<button id="fb" aria-label="Spin and recolor the brick"><div id="b3">
+<div class="f" style="width:52px;height:26px;transform:translateZ(13px)"></div>
+<div class="f" style="width:52px;height:26px;transform:translateZ(-13px);filter:brightness(.7)"></div>
+<div class="f" style="left:13px;width:26px;height:26px;transform:rotateY(90deg) translateZ(26px);filter:brightness(.82)"></div>
+<div class="f" style="left:13px;width:26px;height:26px;transform:rotateY(-90deg) translateZ(26px);filter:brightness(.82)"></div>
+<div class="f st" style="width:52px;height:26px;transform:rotateX(90deg) translateZ(13px);filter:brightness(1.15)"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</div></button>
+
+<header id="hero">
+<div class="sun" data-y=".35"></div>
+<div class="cl" style="left:6%;top:36%" data-x=".12"><i></i></div>
+<div class="cl" style="right:12%;top:46%" data-x="-.08"><i></i></div>
+<div id="ttl" data-y=".45"><h1>Brick Park</h1><p>A sunny playground, built one brick at a time</p></div>
+<div class="hl1" data-y="-.06"></div>
+<div class="mid" data-y="-.12" id="mid"><div class="hs"><i></i><div><span></span><span></span></div></div></div>
+<div class="hl2" data-y="-.2"></div>
+<div class="fl" data-y="-.2" id="fl"></div>
+<div id="bo" data-y="-.28"></div>
+<div id="nt"></div><div class="hint">Scroll to start building</div>
+</header>
+
+<section id="story"><div class="pin"><div id="tw"></div><div class="tx"><h2>Built brick by brick</h2><p class="ln">Every great world</p><p class="ln">starts with one brick.</p><p class="ln">Then another.</p><p class="ln">Then you can’t stop.</p></div></div></section>
+
+<div id="mqw"><div id="mq"></div></div>
+
+<section id="crew"><h2>Meet the crew</h2><div id="arc"></div><p id="say">Tap a character to say hello</p></section>
+
+<section id="worlds"><h2>Pick a world</h2>
+<div class="w" style="--i:0;background:#1F6FD1"><b>Brick City</b><p>Skyscrapers, taxis, and one very tall crane.</p></div>
+<div class="w" style="--i:1;background:#6C5CE7"><b>Space Station</b><p>Zero gravity, glowing panels, and moon bricks.</p></div>
+<div class="w" style="--i:2;background:#E0701A"><b>Pirate Bay</b><p>A treasure map, a creaky ship, and a hungry parrot.</p></div>
+</section>
+
+<section id="zoom"><h2>Featured world</h2><div id="zc"><div id="sk"></div><b>Brick City</b><p>Zoom in on the tallest skyline in Brick Park.</p></div></section>
+
+<section id="gs"><h2>Postcards</h2><div id="gal"></div></section>
+
+<section id="mk" class="pl" style="background:#FFD21F;color:#2a1f00"><h2>Make your minifig</h2><div id="mf"></div><div id="mc"></div></section>
+<section id="bd" class="pl" style="background:#CFEBFF;color:#0d2a5c"><h2>Build your own world</h2><div id="pal"></div><div id="bp"></div><p>Tap a stud to place a brick. Tap again to stack it higher.</p><p id="bn"></p></section>
+<section id="gm" class="pl" style="background:#1F6FD1;color:#fff"><h2>Catch the bricks</h2><div id="ga"><p id="sc2">Score 0</p></div><button class="bt" id="gb">Play for 15 seconds</button></section>
+<section id="rk"><div class="pin2"><div id="stars"></div><div id="cd">3</div><div id="rkt"></div><div class="moon"></div></div></section>
+<footer><div class="studs"></div><h2>Ready to build?</h2><button id="go">Start building</button><small>A fan-made project. Not affiliated with or endorsed by the LEGO Group.</small></footer>
+
+<script src="js/main.js"></script></body></html>
